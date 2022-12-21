@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6ADE6"
+    tools:context=".Activity3">
+
+    <TextView
+        android:id="@+id/bankText"
+        android:layout_width="364dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="40dp"
+        android:text="Bank Account Activity"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/DepositField"
+        android:layout_width="266dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="to deposit 500 click deposit button"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BankNameText" />
+
+    <TextView
+        android:id="@+id/accountNumberText"
+        android:layout_width="252dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:text="Withdraw Amount"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DepositField" />
+
+    <TextView
+        android:id="@+id/BankNameText"
+        android:layout_width="250dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:text=" Deposit Amount"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankText" />
+
+    <EditText
+        android:id="@+id/WithdrawField"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="To withdraw 100 click deposit button"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountNumberText" />
+
+    <Button
+        android:id="@+id/buttonDeposit"
+        android:layout_width="147dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="40dp"
+        android:text="Deposit"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WithdrawField"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <Button
+        android:id="@+id/buttonWithdraw"
+        android:layout_width="153dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="16dp"
+        android:text="Withdraw"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toEndOf="@+id/buttonDeposit"
+        app:layout_constraintTop_toBottomOf="@+id/WithdrawField"
+        app:layout_constraintVertical_bias="0.147" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
